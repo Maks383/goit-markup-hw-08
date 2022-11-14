@@ -30,7 +30,7 @@ margin-bottom: 30px;
 @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.36;
-  };
+}
 }
 
 .hero-btn {
@@ -55,7 +55,6 @@ border-radius: 4px;
 padding-right: 492px;
 padding-left: 492px;
 }
-
 .hero-btn {
 background-color: #2196f3;
 transition-property: background-color;
@@ -65,3 +64,4 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background-color: #188ce8;
     }
 }
+
