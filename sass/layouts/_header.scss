@@ -44,6 +44,10 @@
   align-items: center;
 }
 
+.header__container.is-open {
+  transform: translateX(0);
+}
+
 .navigation {
   display: flex;
   align-items: center;

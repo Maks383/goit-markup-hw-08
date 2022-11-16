@@ -50,6 +50,7 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     width: 656px;
+    padding: 0 15px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -371,6 +372,10 @@ body {
 .header__container {
   display: flex;
   align-items: center;
+}
+
+.header__container.is-open {
+  transform: translateX(0);
 }
 
 .navigation {
