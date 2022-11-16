@@ -7,6 +7,12 @@
     color: #212121;
     margin-bottom: 50px;
   }
+
+  .work {
+    @media screen and (max-width: 1200px) {
+    display: none;
+    }
+  }
   
   .card {
     display: flex;

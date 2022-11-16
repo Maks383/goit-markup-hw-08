@@ -67,10 +67,52 @@
             </a>
           </li>
         </ul>
+        <button type="button" class="menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">O</button>
       </div>
-    </header> 
+    </header>
     <main>
-      <section class="hero section-hero">
+      <div class="mob-container js-menu-container is-open" id="mobile-menu">
+        <button type="button" class="menu-btn js-close-menu" >
+          X
+        </button>
+        <ul class="mob-list">
+          <li class="mob-item">
+            <a class="mob-link current" href="./index.html">Студія</a>
+          </li>
+          <li class="mob-item">
+            <a class="mob-link " href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="mob-item">
+            <a class="mob-link " href="">Контакти</a>
+          </li>
+        </ul>
+        <ul class="mob-contact">
+          <li class="mob-contact-item">
+            <a class="mob-contact-tel link" href="tel:+380961111111">
+              +38 096 111 11 11
+            </a>
+          </li>
+          <li>
+            <a class="mob-contact-mail link" href="mailto:info@devstudio.com">
+              info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="mob-soc">
+          <li class="mob-soc-item">
+            <a class="mob-soc-link" href="">Instagram</a>
+          </li>
+          <li class="mob-soc-item">
+            <a class="mob-soc-link" href="">Twitter</a>
+          </li>
+          <li class="mob-soc-item">
+            <a class="mob-soc-link" href="">Facebook</a>
+          </li>
+          <li class="mob-soc-item">
+            <a class="mob-soc-link" href="">Linkedin</a>
+          </li>
+        </ul>
+      </div>
+        <section class="hero section-hero">
         <div class="container hero_container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" data-modal-open class="hero-btn">
@@ -186,13 +228,20 @@
           <h2 class="team-top-title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-link">
-              <img
-                class="team-img"
-                src="./images/team-hw1-1.jpg"
-                alt="Ігор Дем'яненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source srcset="./images/team-hw1-1.jpg  1x, ./images/team-hw1-1-2x.jpg 2x"
+                media="(min-width: 1200px)"
+                />
+                <source srcset="./images/team-hw1-1-img-tab.jpg  1x, ./images/team-hw1-1-img-tab-2x.jpg 2x"
+                media="(min-width: 768px)"/>
+                <source srcset="./images/team-hw1-1-img-mob.jpg  1x, ./images/team-hw1-1-img-mob-2x.jpg 2x"
+                media="(max-width: 768px)"/>
+                <img
+                  class="team-img"
+                  src="./images/team-hw1-1.jpg"
+                  alt="Ігор Дем'яненко"
+                />
+              </picture>
               <div class="team-content">
                 <h3 class="team-title">Ігор Дем'яненко</h3>
                 <p class="team-text">Product Designer</p>
@@ -229,13 +278,20 @@
               </ul>
             </li>
             <li class="team-link">
-              <img
-                class="team-img"
-                src="./images/team-hw1-2.jpg"
-                alt="Ольга Рєпіна"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source srcset="./images/team-hw1-2.jpg  1x, ./images/team-hw1-2-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  />
+                  <source srcset="./images/team-hw1-2-img-tab.jpg  1x, ./images/team-hw1-2-img-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"/>
+                  <source srcset="./images/team-hw1-2-img-mob.jpg  1x, ./images/team-hw1-2-img-mob-2x.jpg 2x"
+                  media="(max-width: 768px)"/>
+                <img
+                  class="team-img"
+                  src="./images/team-hw1-2.jpg"
+                  alt="Ольга Рєпіна"
+                />
+              </picture>
               <div class="team-content">
                 <h3 class="team-title">Ольга Рєпіна</h3>
                 <p class="team-text">Frontend Developer</p>
@@ -272,13 +328,20 @@
               </ul>
             </li>
             <li class="team-link">
-              <img
-                class="team-img"
-                src="./images/team-hw1-3.jpg"
-                alt="Микола Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source srcset="./images/team-hw1-3.jpg  1x, ./images/team-hw1-3-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  />
+                  <source srcset="./images/team-hw1-3-img-tab.jpg  1x, ./images/team-hw1-3-img-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"/>
+                  <source srcset="./images/team-hw1-3-img-mob.jpg  1x, ./images/team-hw1-3-img-mob-2x.jpg 2x"
+                  media="(max-width: 768px)"/>
+                <img
+                  class="team-img"
+                  src="./images/team-hw1-3.jpg"
+                  alt="Микола Тарасов"
+                />
+              </picture>
               <div class="team-content">
                 <h3 class="team-title">Микола Тарасов</h3>
                 <p class="team-text">Marketing</p>
@@ -315,13 +378,20 @@
               </ul>
             </li>
             <li class="team-link">
-              <img
-                class="team-img"
-                src="./images/team-hw1-4.jpg"
-                alt="Михайло Єрмаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source srcset="./images/team-hw1-4.jpg  1x, ./images/team-hw1-4-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  />
+                  <source srcset="./images/team-hw1-4-img-tab.jpg  1x, ./images/team-hw1-4-img-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"/>
+                  <source srcset="./images/team-hw1-4-img-mob.jpg  1x, ./images/team-hw1-4-img-mob-2x.jpg 2x"
+                  media="(max-width: 768px)"/>
+                <img
+                  class="team-img"
+                  src="./images/team-hw1-4.jpg"
+                  alt="Михайло Єрмаков"
+                />
+              </picture>
               <div class="team-content">
                 <h3 class="team-title">Михайло Єрмаков</h3>
                 <p class="team-text">UI Designer</p>
@@ -570,8 +640,12 @@
       </div>
     </div>
     <script src="./modal.js"></script>
+    <script src="./mob-modal.js"></script>
   </body>
 </html> 
+    </main>
+  </body>
+</html> -->
     </main>
   </body>
 </html>
