@@ -67,23 +67,32 @@
             </a>
           </li>
         </ul>
-        <button type="button" class="menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">O</button>
+        <button
+          type="button"
+          class="menu-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-menu-svg"></use>
+          </svg>
+        </button>
       </div>
-    </header>
-    <main>
       <div class="mob-container js-menu-container is-open" id="mobile-menu">
-        <button type="button" class="menu-btn js-close-menu" >
-          X
+        <button type="button" class="menu-btn js-close-menu">
+          <svg width="24" height="24">
+            <use href="./images/symbol-defs.svg#icon-close-black"></use>
+          </svg>
         </button>
         <ul class="mob-list">
           <li class="mob-item">
-            <a class="mob-link current" href="./index.html">Студія</a>
+            <a class="mob-link link" href="./index.html">Студія</a>
           </li>
           <li class="mob-item">
-            <a class="mob-link " href="./portfolio.html">Портфоліо</a>
+            <a class="mob-link link" href="./portfolio.html">Портфоліо</a>
           </li>
           <li class="mob-item">
-            <a class="mob-link " href="">Контакти</a>
+            <a class="mob-link link" href="">Контакти</a>
           </li>
         </ul>
         <ul class="mob-contact">
@@ -94,25 +103,28 @@
           </li>
           <li>
             <a class="mob-contact-mail link" href="mailto:info@devstudio.com">
-              info@devstudio.com</a>
+              info@devstudio.com</a
+            >
           </li>
         </ul>
         <ul class="mob-soc">
           <li class="mob-soc-item">
-            <a class="mob-soc-link" href="">Instagram</a>
+            <a class="mob-soc-link link" href="">Instagram</a>
           </li>
           <li class="mob-soc-item">
-            <a class="mob-soc-link" href="">Twitter</a>
+            <a class="mob-soc-link link" href="">Twitter</a>
           </li>
           <li class="mob-soc-item">
-            <a class="mob-soc-link" href="">Facebook</a>
+            <a class="mob-soc-link link" href="">Facebook</a>
           </li>
           <li class="mob-soc-item">
-            <a class="mob-soc-link" href="">Linkedin</a>
+            <a class="mob-soc-link link" href="">Linkedin</a>
           </li>
         </ul>
       </div>
-        <section class="hero section-hero">
+    </header>
+    <main>
+      <section class="hero section-hero">
         <div class="container hero_container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" data-modal-open class="hero-btn">
@@ -188,7 +200,7 @@
             </li>
           </ul>
         </div>
-      </section> 
+      </section>
       <section class="work section-work">
         <div class="container">
           <h2 class="work-title">Чим ми займаємося</h2>
@@ -222,20 +234,34 @@
             </li>
           </ul>
         </div>
-      </section> 
+      </section>
       <section class="team section">
         <div class="container">
           <h2 class="team-top-title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-link">
               <picture>
-                <source srcset="./images/team-hw1-1.jpg  1x, ./images/team-hw1-1-2x.jpg 2x"
-                media="(min-width: 1200px)"
+                <source
+                  srcset="
+                    ./images/team-hw1-1.jpg    1x,
+                    ./images/team-hw1-1-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
                 />
-                <source srcset="./images/team-hw1-1-img-tab.jpg  1x, ./images/team-hw1-1-img-tab-2x.jpg 2x"
-                media="(min-width: 768px)"/>
-                <source srcset="./images/team-hw1-1-img-mob.jpg  1x, ./images/team-hw1-1-img-mob-2x.jpg 2x"
-                media="(max-width: 768px)"/>
+                <source
+                  srcset="
+                    ./images/team-hw1-1-img-tab.jpg    1x,
+                    ./images/team-hw1-1-img-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-hw1-1-img-mob.jpg    1x,
+                    ./images/team-hw1-1-img-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 768px)"
+                />
                 <img
                   class="team-img"
                   src="./images/team-hw1-1.jpg"
@@ -279,13 +305,27 @@
             </li>
             <li class="team-link">
               <picture>
-                <source srcset="./images/team-hw1-2.jpg  1x, ./images/team-hw1-2-2x.jpg 2x"
+                <source
+                  srcset="
+                    ./images/team-hw1-2.jpg    1x,
+                    ./images/team-hw1-2-2x.jpg 2x
+                  "
                   media="(min-width: 1200px)"
-                  />
-                  <source srcset="./images/team-hw1-2-img-tab.jpg  1x, ./images/team-hw1-2-img-tab-2x.jpg 2x"
-                  media="(min-width: 768px)"/>
-                  <source srcset="./images/team-hw1-2-img-mob.jpg  1x, ./images/team-hw1-2-img-mob-2x.jpg 2x"
-                  media="(max-width: 768px)"/>
+                />
+                <source
+                  srcset="
+                    ./images/team-hw1-2-img-tab.jpg    1x,
+                    ./images/team-hw1-2-img-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-hw1-2-img-mob.jpg    1x,
+                    ./images/team-hw1-2-img-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 768px)"
+                />
                 <img
                   class="team-img"
                   src="./images/team-hw1-2.jpg"
@@ -329,13 +369,27 @@
             </li>
             <li class="team-link">
               <picture>
-                <source srcset="./images/team-hw1-3.jpg  1x, ./images/team-hw1-3-2x.jpg 2x"
+                <source
+                  srcset="
+                    ./images/team-hw1-3.jpg    1x,
+                    ./images/team-hw1-3-2x.jpg 2x
+                  "
                   media="(min-width: 1200px)"
-                  />
-                  <source srcset="./images/team-hw1-3-img-tab.jpg  1x, ./images/team-hw1-3-img-tab-2x.jpg 2x"
-                  media="(min-width: 768px)"/>
-                  <source srcset="./images/team-hw1-3-img-mob.jpg  1x, ./images/team-hw1-3-img-mob-2x.jpg 2x"
-                  media="(max-width: 768px)"/>
+                />
+                <source
+                  srcset="
+                    ./images/team-hw1-3-img-tab.jpg    1x,
+                    ./images/team-hw1-3-img-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-hw1-3-img-mob.jpg    1x,
+                    ./images/team-hw1-3-img-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 768px)"
+                />
                 <img
                   class="team-img"
                   src="./images/team-hw1-3.jpg"
@@ -379,13 +433,27 @@
             </li>
             <li class="team-link">
               <picture>
-                <source srcset="./images/team-hw1-4.jpg  1x, ./images/team-hw1-4-2x.jpg 2x"
+                <source
+                  srcset="
+                    ./images/team-hw1-4.jpg    1x,
+                    ./images/team-hw1-4-2x.jpg 2x
+                  "
                   media="(min-width: 1200px)"
-                  />
-                  <source srcset="./images/team-hw1-4-img-tab.jpg  1x, ./images/team-hw1-4-img-tab-2x.jpg 2x"
-                  media="(min-width: 768px)"/>
-                  <source srcset="./images/team-hw1-4-img-mob.jpg  1x, ./images/team-hw1-4-img-mob-2x.jpg 2x"
-                  media="(max-width: 768px)"/>
+                />
+                <source
+                  srcset="
+                    ./images/team-hw1-4-img-tab.jpg    1x,
+                    ./images/team-hw1-4-img-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-hw1-4-img-mob.jpg    1x,
+                    ./images/team-hw1-4-img-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 768px)"
+                />
                 <img
                   class="team-img"
                   src="./images/team-hw1-4.jpg"
@@ -479,39 +547,39 @@
           </ul>
         </div>
       </section>
-    </main> 
+    </main>
     <footer class="footer">
       <div class="foter container">
-        <div class="footer-soc">
-          <a class="footer-link link" href="./index.html"
-            >Web<span class="footer-logo">Studio</span></a
-          >
-          <address class="footer-address">
-            <ul class="footer-list list">
-              <li class="footer-item">
-                <a
-                  class="footer-map link"
-                  href="https://goo.gl/maps/CyibSN7R3VRPbVuL6"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
-              </li>
-              <li class="footer-item">
-                <a class="footer-mail link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li>
-                <a class="footer-tel link" href="tel:+380961111111"
-                  >+38 096 111 11 11</a
-                >
-              </li>
-            </ul>
-          </address>
-        </div>
-        <div class="footer-soc">
-          <div class="foter-item">
+        <div class="footer-box">
+          <div class="footer-adress">
+            <a class="footer-link link" href="./index.html"
+              >Web<span class="footer-logo">Studio</span></a
+            >
+            <address class="footer-address">
+              <ul class="footer-list list">
+                <li class="footer-item">
+                  <a
+                    class="address-link link"
+                    href="https://goo.gl/maps/CyibSN7R3VRPbVuL6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="footer-item">
+                  <a class="address-link link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li>
+                  <a class="address-link link" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-soc">
             <p class="footer-soc-title">приєднуйтесь</p>
             <ul class="footer-soc-list list">
               <li class="footer-soc-item">
@@ -545,7 +613,7 @@
             </ul>
           </div>
         </div>
-        <form>
+        <form class="form">
           <p class="footer-mailing-title">Підпишіться на розсилку</p>
           <input
             type="email"
@@ -641,11 +709,5 @@
     </div>
     <script src="./modal.js"></script>
     <script src="./mob-modal.js"></script>
-  </body>
-</html> 
-    </main>
-  </body>
-</html> -->
-    </main>
   </body>
 </html>
