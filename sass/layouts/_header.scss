@@ -13,10 +13,6 @@
   color: #000;
 }
 
-.navigation__logo {
-  margin-right: 93px;
-}
-
 .logo__item {
   color: #2196f3;
 }
@@ -73,7 +69,7 @@
   .category {
     @media screen and (min-width: 768px){
     display: flex;
-    margin-left: 88px;
+    margin-left: 85px;
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
@@ -97,22 +93,20 @@
 
 
 
-
+// Тут мажин 86 томущо інакше не вміщається він
 .connect {
   @media screen and (min-width: 768px){
     margin: 0;
-    margin-left: 96px;
+    margin-left: 86px;
     padding: 0;
     list-style: none;
   }
-}
-
-
-.connect {
   @media screen and (min-width: 1200px){
     display: flex;
+    margin-left: auto;
   }
 }
+
 
 .connect {
   @media screen and (max-width: 768px){
@@ -124,6 +118,14 @@
 
 
 .connect__mail {
+  @media screen and (min-width: 768px){
+    display: block;
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 1200px){
+    display: flex;
+    margin-bottom: 0;
+  }
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -139,12 +141,6 @@
     color: #2196f3;
     fill: #2196f3;
   }
-}
-
-
-
-.connect__mail:not(:last-child) {
-    margin-bottom: 10px;
 }
 
 
