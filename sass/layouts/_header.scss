@@ -114,7 +114,18 @@
   }
 }
 
+.connect-top:not(:last-child) {
+  @media screen and (min-width: 768px){
+    margin-bottom: 10px;
+  }
+}
+
+
+
 .connect__mail {
+  @media screen and (max-width: 768px){
+    display: none;
+  }
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -132,17 +143,7 @@
   }
 }
 
-.connect__mail {
-  @media screen and (max-width: 768px){
-    display: none;
-  }
-}
 
-.connect__tel {
-  @media screen and (max-width: 768px){
-    display: none;
-  }
-}
 
 .connect__mail:not(:last-child) {
   @media screen and (min-width: 768px) {
@@ -157,6 +158,9 @@
 }
 
 .connect__tel {
+  @media screen and (max-width: 768px){
+    display: none;
+  }
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -250,7 +254,7 @@
 
 
 
-.menu-btn {
+.menu-btn-open {
   @media screen and (min-width: 768px){
     display: none;}
   margin-left: auto;
@@ -268,13 +272,31 @@
 
 }
 
+.menu-btn {
+  margin-left: auto;
+  min-height: 40px;
+  min-width: 40px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
 .mob-list {
     margin: 0;
     padding-left: 0;
     list-style: none;
 }
-
 .mob-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-contact-item:not(:last-child) {
   margin-bottom: 32px;
 }
 

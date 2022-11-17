@@ -30,14 +30,14 @@
           <ul class="category list">
             <li class="category__item">
               <a
-                class="category__link link category__header"
+                class="category__link link current category__header"
                 href="./index.html"
                 >Студія</a
               >
             </li>
             <li class="category__item">
               <a
-                class="category__link link category__header current"
+                class="category__link link category__header"
                 href="./portfolio.html"
                 >Портфоліо</a
               >
@@ -67,7 +67,61 @@
             </a>
           </li>
         </ul>
+        <button
+          type="button"
+          class="menu-btn-open js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-menu-svg"></use>
+          </svg>
+        </button>
       </div>
+      </div>
+      <div class="mob-container js-menu-container " id="mobile-menu">
+        <button type="button" class="menu-btn js-close-menu">
+          <svg width="24" height="24">
+            <use href="./images/symbol-defs.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <ul class="mob-list">
+          <li class="mob-item">
+            <a class="mob-link link" href="./index.html">Студія</a>
+          </li>
+          <li class="mob-item">
+            <a class="mob-link link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="mob-item">
+            <a class="mob-link link" href="">Контакти</a>
+          </li>
+        </ul>
+        <ul class="mob-contact">
+          <li class="mob-contact-item">
+            <a class="mob-contact-tel link" href="tel:+380961111111">
+              +38 096 111 11 11
+            </a>
+          </li>
+          <li>
+            <a class="mob-contact-mail link" href="mailto:info@devstudio.com">
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mob-soc">
+          <li class="mob-soc-item">
+            <a class="mob-soc-link link" href="">Instagram</a>
+          </li>
+          <li class="mob-soc-item">
+            <a class="mob-soc-link link" href="">Twitter</a>
+          </li>
+          <li class="mob-soc-item">
+            <a class="mob-soc-link link" href="">Facebook</a>
+          </li>
+          <li class="mob-soc-item">
+            <a class="mob-soc-link link" href="">Linkedin</a>
+          </li>
+        </ul>
     </header>
     <main>
       <section class="section">

@@ -40,23 +40,25 @@ body {
 
 .container {
   margin: 0 auto;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-    padding: 0 15px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
     width: 656px;
-    padding: 0 15px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    padding: 0 15px;
   }
 }
 
@@ -438,6 +440,12 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .connect-top:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
 .connect__mail {
   font-weight: 500;
   font-size: 14px;
@@ -450,21 +458,14 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.connect__mail:hover, .connect__mail:focus {
-  color: #2196f3;
-  fill: #2196f3;
-}
-
 @media screen and (max-width: 768px) {
   .connect__mail {
     display: none;
   }
 }
-
-@media screen and (max-width: 768px) {
-  .connect__tel {
-    display: none;
-  }
+.connect__mail:hover, .connect__mail:focus {
+  color: #2196f3;
+  fill: #2196f3;
 }
 
 @media screen and (min-width: 768px) {
@@ -490,6 +491,11 @@ body {
   transition-property: fill, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 768px) {
+  .connect__tel {
+    display: none;
+  }
 }
 .connect__tel:hover, .connect__tel:focus {
   color: #2196f3;
@@ -570,7 +576,7 @@ body {
   right: 15px;
 }
 
-.menu-btn {
+.menu-btn-open {
   margin-left: auto;
   min-height: 40px;
   min-width: 40px;
@@ -585,9 +591,24 @@ body {
   outline: none;
 }
 @media screen and (min-width: 768px) {
-  .menu-btn {
+  .menu-btn-open {
     display: none;
   }
+}
+
+.menu-btn {
+  margin-left: auto;
+  min-height: 40px;
+  min-width: 40px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
 }
 
 .mob-list {
@@ -597,6 +618,10 @@ body {
 }
 
 .mob-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-contact-item:not(:last-child) {
   margin-bottom: 32px;
 }
 
