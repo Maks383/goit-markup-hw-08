@@ -409,6 +409,12 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .category__item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .category {
     margin-left: 92px;
@@ -436,12 +442,6 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .connect-top:not(:last-child) {
-    margin-bottom: 10px;
-  }
-}
-
 .connect__mail {
   font-weight: 500;
   font-size: 14px;
@@ -459,10 +459,8 @@ body {
   fill: #2196f3;
 }
 
-@media screen and (min-width: 768px) {
-  .connect__mail:not(:last-child) {
-    margin-bottom: 10px;
-  }
+.connect__mail:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 @media screen and (min-width: 1200px) {

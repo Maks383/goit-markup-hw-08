@@ -120,11 +120,6 @@
   }
 }
 
-.connect-top:not(:last-child) {
-  @media screen and (min-width: 768px){
-    margin-bottom: 10px;
-  }
-}
 
 
 
@@ -149,8 +144,7 @@
 
 
 .connect__mail:not(:last-child) {
-  @media screen and (min-width: 768px) {
-    margin-bottom: 10px;}
+    margin-bottom: 10px;
 }
 
 
